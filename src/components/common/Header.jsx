@@ -1,5 +1,5 @@
 "use client"
-import { HEADER_LIST, HEADER_SOCIAL_ICONS_LIST } from "@/utils/helper";
+import { HEADER_LIST, HEADER_SOCIAL_ICONS_LIST, HEADER_SOCIAL_ICONS_LIST_TWO } from "@/utils/helper";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
@@ -30,18 +30,20 @@ const Header = () => {
                     <Link href="/">
                         <Image className="lg:!max-w-[41px] md:max-w-9 max-w-7 lg:!min-w-[41px] md:min-w-9 min-w-7 h-auto w-full" src="/assets/images/webp/header-logo.webp" width={41} height={47} alt="logo" />
                     </Link>
-                    <div className={`flex xl:gap-5 lg:pl-[18px] pl-4 items-center max-lg:px-4 relative w-full max-lg:bg-black mx-auto gap-4 !text-black lg:max-h-max max-lg:fixed max-lg:top-0 max-lg:h-full max-lg:w-full max-lg:flex-col max-lg:bg-hero-pattern bg-cover bg-top max-lg:duration-300 justify-start max-lg:items-center z-[60] ${open ? "max-lg:left-0" : "max-lg:left-full"}`}>
+                    <div className={`flex xl:gap-5 lg:pl-[18px] pl-4 items-center max-lg:px-4 relative w-full max-lg:bg-black mx-auto gap-7 text-black max-lg:text-white lg:max-h-max max-lg:fixed max-lg:top-0 max-lg:h-full max-lg:w-full max-lg:flex-col max-lg:bg-hero-pattern bg-cover bg-top max-lg:duration-300 justify-center max-lg:items-center z-[60] ${open ? "max-lg:left-0" : "max-lg:left-full"}`}>
                         {HEADER_LIST.map((item, index) => (
                             <Link onClick={() => setOpen(!open)} key={index} href={item.link} className="relative lg:text-base text-sm transition-all duration-300 !leading-[130%] uppercase ease-linear group">{item.title}
                                 <span className="absolute left-0 -bottom-1 w-0 h-[5px] bg-yellow transition-all rounded-xl duration-300 ease-linear group-hover:w-full"></span>
                             </Link>
                         ))}
                         <div className="md:hidden max-md:block">
-                            {HEADER_SOCIAL_ICONS_LIST.map((item, index) => (
-                                <Link key={index} href={item.link} target="_blank">
-                                    <Image className="lg:min-w-[35px] md:min-w-[30px] min-w-7 lg:max-w-[35px] md:max-w-[30px] max-w-full object-cover" src={item.icon} width={35} height={35} alt="social-icon" />
-                                </Link>
-                            ))}
+                            <div className="flex items-center gap-3">
+                                {HEADER_SOCIAL_ICONS_LIST_TWO.map((item, index) => (
+                                    <Link key={index} href={item.link} target="_blank">
+                                        <Image className="lg:min-w-[35px] md:min-w-[30px] min-w-7 lg:max-w-[35px] md:max-w-[30px] max-w-full object-cover" src={item.icon} width={35} height={35} alt="social-icon" />
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
                     </div>
                     <div className="max-md:hidden w-full justify-end md:mr-20 lg:mr-0 block">

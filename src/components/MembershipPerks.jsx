@@ -1,24 +1,48 @@
-import Image from 'next/image'
-import React from 'react'
-import CustomHeading from './common/CustomHeading'
+'use client';
+import React from "react";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
+import { MEMBERSHIP_PERKS_DATA_LIST } from "@/utils/helper";
+import CustomHeading from "./common/CustomHeading";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const MembershipPerks = () => {
     return (
-        <div className='bg-dark-green-2 -mt-1 bg-cover flex flex-col justify-center items-center relative pt-28'>
-            <Image className="max-[1660px]:max-w-[1920px] lg:max-w-[1440px] max-sm:min-w-[545px] absolute -top-[70px] mx-auto max-h-[786px] h-auto w-full" src="/assets/images/webp/zig-zag-img.webp" width={1440} height={786} alt="zig-zag-vector" />
-            <h4 className='uppercase text-center md:text-xl md:mb-5 mb-3 text-white'>Community + Funding + Sunset</h4>
-            <CustomHeading customClass="xl:mb-[144px] lg:mb-[125px] md:mb-6 mb-2" title="SUNSET CLUB MEMBERSHIP PERKS" />
-            <div className="flex flex-wrap w-full mx-auto justify-center items-center">
-                <div className="lg:w-8/12 w-full">
-                    <Image className="h-full w-full lg:max-w-[870px] md:max-w-[770px]" src="/assets/images/webp/clubhouse-img.webp" width={870} height={446} alt="zig-zag-vector" />
-
+        <div className="flex justify-center items-center w-full bg-dark-green-2 -mt-1 relative">
+            <div className="relative pb-[102px] max-lg:pb-[127px] max-md:pb-[50px] w-full">
+                <div className="max-lg:max-w-[770px] mx-auto pt-[97px] max-lg:pt-[70px] max-md:pt-[34px] px-5">
+                    <p className="text-xl pb-5 text-white uppercase text-center max-md:text-base max-md:pb-3"> Community + Funding + Sunset</p>
+                    <CustomHeading customClass="text-white text-center" title="SUNSET CLUB MEMBERSHIP PERKS" />
                 </div>
-                <div className="lg:w-4/12 w-full">
+                <div className="xl:pt-[144px] lg:pt-20 md:pt-6 pt-1 flex w-full items-center gap-7 max-xl:gap-6 max-w-[1440px] mx-auto max-xl:flex-wrap max-xl:justify-center max-xl:px-8 max-md:px-4">
+                    <div className="flex flex-wrap w-full items-center">
+                        <div className="lg:w-8/12 w-full">
+                            <Image className="xl:max-w-[870px] lg:max-w-[670px] lg:pe-7 xl:pe-0 pointer-events-none max-sm:px-1 w-full" src="/assets/images/webp/clubhouse-img.webp" width={870} height={446} alt="club-house-img" />
+                        </div>
+                        <div className="lg:w-4/12 w-full">
+                            <div className="flex w-full flex-wrap xl:gap-2 gap-1.5">
+                                {MEMBERSHIP_PERKS_DATA_LIST.map((obj, i) => (
+                                    <div key={i} className="w-full xl:max-w-[181px] lg:max-w-[150px] xl:px-4 px-3 max-w-[278px] hover:bg-[#E8770E] bg-white rounded-lg flex flex-col items-center justify-center xl:py-[26px] py-5 bg-[url(/assets/images/webp/membership-cards-border.webp)] duration-300 ease-linear bg-[length:100%_100%] bg-no-repeat" >
+                                        <Image width={48} height={49} className="max-w-12 lg:mb-4 mb-3" src={obj.image} alt={obj.title} />
+                                        <p className="text-center lg:text-xs md:text-base">
+                                            {obj.title}
+                                        </p>
+                                        <p className="opacity-70 lg:text-[6px] text-center pt-1 max-xl:text-[10px]">
+                                            {obj.description}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default MembershipPerks
+export default MembershipPerks;

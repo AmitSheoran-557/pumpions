@@ -4,6 +4,7 @@ import LookFamiliar from "@/components/LookFamiliar";
 import MeetThePumpions from "@/components/MeetThePumpions";
 import MembershipPerks from "@/components/MembershipPerks";
 import OgPumpions from "@/components/OgPumpions";
+import PumpionsFaq from "@/components/PumpionsFaq";
 import Pumpmap from "@/components/Pumpmap";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <MembershipPerks />
       <Pumpmap />
       <OgPumpions />
+      <PumpionsFaq />
       <Footer />
     </>
   );

@@ -3,6 +3,7 @@
 
 * {
     font-family: "Press Start 2P", system-ui;
+    scroll-behavior: smooth;
 }
 
 .bg-yellow {
@@ -15,4 +16,42 @@
 
 .bg-dark-green-2 {
     background-color: #28424F;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ffffff !important;
+}
+
+.hero-img-1 {
+    animation: moveLeftRight 15s infinite ease-in-out;
+}
+
+.hero-img-2 {
+    animation: moveRightLeft 15s infinite ease-in-out;
+}
+
+
+@keyframes moveRightLeft {
+
+    0% {
+        transform: translateX(160px);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-170px);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
 }
