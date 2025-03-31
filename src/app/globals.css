@@ -22,6 +22,10 @@
     display: flex;
 }
 
+.membership-perks .swiper-slide {
+    max-width: max-content !important;
+}
+
 .swiper-pagination-bullet {
     background-color: #ffffff !important;
 }
@@ -34,6 +38,15 @@
     animation: moveRightLeft 15s infinite ease-in-out;
 }
 
+.swiper-pagination {
+    position: absolute !important;
+    bottom: 0px !important;
+}
+
+.swiper-wrapper {
+    display: flex;
+    padding-bottom: 40px;
+}
 
 @keyframes moveRightLeft {
 
