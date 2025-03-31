@@ -28,10 +28,10 @@ const MembershipPerks = () => {
                                     {MEMBERSHIP_PERKS_DATA_LIST.map((obj, i) => (
                                         <div key={i} className="w-full xl:max-w-[181px] lg:max-w-[150px] xl:px-4 px-3 max-w-[278px] hover:bg-[#E8770E] bg-white rounded-lg flex flex-col items-center justify-center xl:py-[26px] py-5 bg-[url(/assets/images/webp/membership-cards-border.webp)] duration-300 ease-linear bg-[length:100%_100%] bg-no-repeat" >
                                             <Image width={48} height={49} className="max-w-12 lg:mb-4 mb-3" src={obj.image} alt={obj.title} />
-                                            <p className="text-center lg:text-xs md:text-base">
+                                            <p className="text-center uppercase lg:text-xs md:text-base">
                                                 {obj.title}
                                             </p>
-                                            <p className="opacity-70 lg:text-[6px] text-center pt-1 max-xl:text-[10px]">
+                                            <p className="text-black/70 !leading-[202%] uppercase lg:text-[6px] text-center pt-1 max-xl:text-[10px]">
                                                 {obj.description}
                                             </p>
                                         </div>

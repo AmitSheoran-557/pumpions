@@ -20,24 +20,21 @@ const PumpionsFaq = () => {
             <div className="max-w-[745px] mx-auto w-full relative z-20">
                 <CustomHeading customClass="lg:mb-[46px] md:mb-[50px] mb-[15px]" title="Faq" />
                 <div className="md:space-y-6 sm:space-y-4 space-y-2.5">
-                    {[0, 1, 2, 3, 4].map((_, index) => (
+                    {FAQ_DATA_LIST.map((item, index) => (
                         <div key={index}>
                             <button onClick={() => handleToggle(index)}
                                 className="w-full cursor-pointer flex justify-between items-center md:ps-10 md:pe-[31px] max-md:px-[15px] md:py-4 py-1.5 bg-[url(/assets/images/webp/accordion-border-img.webp)] bg-[length:100%_100%] hover:bg-white sm:min-h-[71px] min-h-[33px] ease-linear transition-all duration-300 rounded-md shadow-sm" >
                                 <h3 className="md:text-base sm:text-xs text-[9px] !leading-[202%] uppercase text-start">
-                                    {FAQ_DATA_LIST[index % FAQ_DATA_LIST.length].question}
+                                    {item.question}
                                 </h3>
                                 <img src={activeIndex === index ? minusIcon : plusIcon} alt={activeIndex === index ? 'Minus Icon' : 'Plus Icon'}
                                     className={`md:w-10 sm:w-8 w-[19px] md:h-10 sm:h-8 h-[19px] transition-transform duration-300 ease-in-out ${activeIndex === index ? 'rotate-180' : 'rotate-0'}`} />
                             </button>
                             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-96' : 'max-h-0'}`}>
-                                <p className="px-4 py-2 md:text-base sm:text-xs text-[9px] text-white">
-                                    {FAQ_DATA_LIST[index % FAQ_DATA_LIST.length].answer}
-                                </p>
+                                <p className="px-4 py-2 md:text-base sm:text-xs text-[9px] text-white !leading-[202%]"> Pumpions is a revolutionary platform for managing your tasks efficiently.</p>
                             </div>
                         </div>
                     ))}
-
                 </div>
             </div>
         </div>

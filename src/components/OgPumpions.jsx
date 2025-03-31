@@ -22,7 +22,7 @@ const OgPumpions = () => {
                             <div className="max-w-[226px] w-full" key={index}>
                                 <Image className="lg:max-w-[226px] w-full mb-[31px]" src={item.image} width={226} height={208} alt="card-img" />
                                 <h4 className='md:text-2xl text-white !leading-[202%] text-center'>{item.name}</h4>
-                                <p className='text-base text-white/70 text-center mb-4'>{item.role}</p>
+                                <p className='text-base uppercase text-white/70 text-center mb-4'>{item.role}</p>
                                 <div className="flex gap-3 justify-center">
                                     <Link href="https://discord.com/" target="_blank">
                                         <Image className="transition-all ease-linear duration-300 hover:scale-110" src="/assets/images/webp/og-pumpions-discord-img.webp" width={35} height={35} alt="social-icon" />

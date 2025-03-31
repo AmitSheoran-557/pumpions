@@ -114,5 +114,9 @@ export const LOOK_FAMILIAR_BOTTOM_LIST = [
 ];
 
 export const FAQ_DATA_LIST = [
-    { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' },
+    { question: 'Aliquam eget libero vitae velit?'},
+    { question: 'Aliquam eget libero vitae velit?'},
+    { question: 'Aliquam eget libero vitae velit?'},
+    { question: 'Aliquam eget libero vitae velit?'},
+    { question: 'Aliquam eget libero vitae velit?'},
 ];
