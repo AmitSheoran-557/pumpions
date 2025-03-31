@@ -6,15 +6,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CustomButton from './common/CustomButton';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const OgPumpions = () => {
     return (
         <div id='team' className='w-full flex justify-center bg-dark-green-2 items-center -mt-1 og-pumpions'>
-            <div className="max-[1660px]:max-w-[1920px] xl:max-w-[1204px] lg:max-w-[992px] md:max-w-[768px] max-w-[375px] mx-auto px-8 w-full">
+            <div className="max-[1660px]:max-w-[1920px] xl:max-w-[1204px] lg:max-w-[992px] md:max-w-[768px] max-w-[375px] mx-auto md:px-4 w-full">
                 <CustomHeading customClass="lg:mb-[79px] md:mb-[75px] mb-[30px]" title="OG PUMPIONS" />
 
                 <div className="w-full md:block max-md:hidden">
@@ -49,7 +48,7 @@ const OgPumpions = () => {
                         {OG_PUMPIONS_DATA_LIST.map((item, index) => (
                             <SwiperSlide key={index} className="flex flex-col max-w-max items-center">
                                 <Image className="w-full mb-[15px] max-w-[226px]" src={item.image} width={226} height={208} alt="card-img" />
-                                <h4 className='text-white text-center text-xl leading-snug'>{item.name}</h4>
+                                <h4 className='text-white !uppercase text-center text-xl leading-snug'>{item.name}</h4>
                                 <p className='text-white/70 text-center text-sm mb-4'>{item.role}</p>
                                 <div className="flex gap-3 justify-center">
                                     <Link href="https://discord.com/" target="_blank">

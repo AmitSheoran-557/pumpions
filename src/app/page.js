@@ -1,3 +1,4 @@
+import BackToTop from "@/components/common/BackToTop";
 import Footer from "@/components/common/Footer";
 import Hero from "@/components/Hero";
 import LookFamiliar from "@/components/LookFamiliar";
@@ -18,6 +19,7 @@ export default function Home() {
       <OgPumpions />
       <PumpionsFaq />
       <Footer />
+      <BackToTop />
     </>
   );
 }

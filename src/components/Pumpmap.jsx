@@ -5,7 +5,7 @@ import Description from './common/Description'
 
 const Pumpmap = () => {
     return (
-        <div className='flex justify-center bg-dark-green-2 items-center -mt-1 w-full lg:pb-[183px] md:pb-[130px] pb-[66px]'>
+        <div id='pumpmap' className='flex justify-center bg-dark-green-2 items-center -mt-1 w-full lg:pb-[183px] md:pb-[130px] pb-[66px]'>
             <div className="max-[1660px]:max-w-[1920px] xl:max-w-[1204px] lg:max-w-[992px] md:max-w-[768px] max-w-[375px] mx-auto md:px-8 px-4 w-full">
                 <div className="flex flex-wrap max-lg:flex-col-reverse w-full justify-center items-center">
                     <div className="lg:w-5/12 w-full">

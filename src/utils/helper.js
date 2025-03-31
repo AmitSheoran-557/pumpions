@@ -9,7 +9,7 @@ export const HEADER_LIST = [
     },
     {
         title: "RoadMap",
-        link: "#roadMap",
+        link: "#pumpmap",
     },
     {
         title: "Team",
@@ -31,23 +31,8 @@ export const HEADER_SOCIAL_ICONS_LIST = [
         icon: "/assets/images/webp/header-social-icon-2.webp",
     },
     {
-        link: "#",
+        link: "https://magiceden.io/",
         icon: "/assets/images/webp/header-social-icon-3.webp",
-    },
-];
-
-export const HEADER_SOCIAL_ICONS_LIST_TWO = [
-    {
-        link: "https://discord.com/",
-        icon: "/assets/images/webp/footer-social-icon-1.webp",
-    },
-    {
-        link: "https://x.com/",
-        icon: "/assets/images/webp/footer-social-icon-2.webp",
-    },
-    {
-        link: "#",
-        icon: "/assets/images/webp/header-social-icon-sm-img.webp",
     },
 ];
 
@@ -61,16 +46,16 @@ export const FOOTER_SOCIAL_ICONS_LIST = [
         icon: "/assets/images/webp/footer-social-icon-2.webp",
     },
     {
-        link: "#",
+        link: "https://magiceden.io/",
         icon: "/assets/images/webp/footer-social-icon-3.webp",
     },
 ];
 
 export const OG_PUMPIONS_DATA_LIST = [
-    { image: "/assets/images/webp/og-pumpions-img-1.webp", name: "Miguel", role: "Founder", },
-    { image: "/assets/images/webp/og-pumpions-img-2.webp", name: "Raphael", role: "Developer", },
-    { image: "/assets/images/webp/og-pumpions-img-3.webp", name: "Filipe", role: "Business", },
-    { image: "/assets/images/webp/og-pumpions-img-4.webp", name: "Azula", role: "Artist", },
+    { image: "/assets/images/webp/og-pumpions-img-1.webp", name: "MIGUEL", role: "<Founder>", },
+    { image: "/assets/images/webp/og-pumpions-img-2.webp", name: "RAPHAEL", role: "<Developer>", },
+    { image: "/assets/images/webp/og-pumpions-img-3.webp", name: "FILIPE", role: "<Business>", },
+    { image: "/assets/images/webp/og-pumpions-img-4.webp", name: "AZULA", role: "<Artist>", },
 ];
 
 export const MEMBERSHIP_PERKS_DATA_LIST = [
@@ -95,6 +80,7 @@ export const MEMBERSHIP_PERKS_DATA_LIST = [
         title: "COMMUNITY FUNDING",
         description: "10% of the royalties to support community-led projects."
     },
+
 ];
 
 export const LOOK_FAMILIAR_TOP_LIST = [
@@ -128,9 +114,5 @@ export const LOOK_FAMILIAR_BOTTOM_LIST = [
 ];
 
 export const FAQ_DATA_LIST = [
-    { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' },
-    { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' },
-    { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' },
-    { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' },
-    { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' },
+    { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' }, { question: 'Aliquam eget libero vitae velit?', answer: 'Pumpions is a revolutionary platform for managing your tasks efficiently.' },
 ];
